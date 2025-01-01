@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Tab Manager with Time Tracking",
+    "description": "Track time spent on specific tabs.",
+    "version": "1.0",
+    "permissions": [
+      "tabs",
+      "storage"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  

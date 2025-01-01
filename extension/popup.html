@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab Manager</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tab Manager</h1>
+    <ul id="tab-list"></ul>
+  </div>
+
+  <template id="tab-template">
+    <li class="tab-item">
+      <div class="tab-details">
+        <span class="tab-title"></span>
+        <span class="time"></span>
+      </div>
+      <div class="tab-actions">
+        <input type="number" class="timer-input" placeholder="Set Timer (s)">
+        <button class="set-timer-btn">Set Timer</button>
+        <button class="close-btn">Close</button>
+      </div>
+    </li>
+  </template>
+
+  <script src="popup.js"></script>
+</body>
+</html>
